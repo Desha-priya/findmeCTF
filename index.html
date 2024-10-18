@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>challange:Find me!</title>
+        <script src="validSecret.js"></script>
+        <style>
+            fieldset{
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-left: 600px;
+    width: 550px;
+    height: fit-content;
+    border: 3px aliceblue solid;
+    box-shadow: 5px 15px;
+
+}
+
+.intew-legend p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+label {
+    color: rgb(41, 158, 208);
+    text-transform: capitalize;
+    text-decoration: solid;
+    font-weight: lighter;
+}
+fieldset input {
+    border-radius: 25px;
+    background-color: rgb(166, 173, 196);
+    color: rgb(14, 23, 41);
+    
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+fieldset input:hover{
+    box-shadow: 2px 5px;
+    width: auto;
+}
+
+ button{
+    
+    background-color: rgb(41, 158, 208);
+    color: aliceblue;
+    
+    padding: 5px;
+    margin-top: 35px;
+    border-radius: 25px;
+    box-shadow: 3px 5px;
+}
+.intwS-submit{
+    margin-left: 50%;
+    font-size: 15px;
+    height: fit-content;
+}
+
+ button:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: red;
+}
+
+            body{
+                background: url('upload.svg')no-repeat;
+                color:rgb(41, 158, 208) ;
+            }
+            h1{
+                text-align: center;
+                color: tomato;
+                text-decoration: underline;
+                box-shadow: 5px 10px gray;
+                text-shadow: 2px 3px darkgray;
+            }
+           p{
+            font-size: 40px;
+            margin-left: 50%;
+           }
+            
+        .hint{
+            color: gainsboro;
+        }    
+         
+
+        </style>
+    </head>
+    <body>
+
+        <h1>            Welcome to uni world...
+        </h1>
+        <p>Find secret to escape!</p>
+        <form method="POST" action="file_upload.php" enctype="multipart/form-data" >
+        
+            <fieldset>
+                <legend class="intew-legend">
+                    File upload
+                </legend>
+                <input type="file" id="anyF" name="anyF" required><br> ~~~ > >
+       
+       <button type="submit" class="intwS-submit" id="uplaod">Upload the file</button>
+
+    </fieldset>
+    <b style="color:grey;font-size: smaller;">hint:(URL)../secret.php</b>
+</form>
+
+    <form onsubmit="validsecret()" >
+
+        <fieldset>
+            <legend class="intew-legend">
+                Secret code
+            </legend>
+            <label for="secret">Enter the secret code here:</label>
+            <input type="text" id="secret" name="secret" required><br> ~~~ > >
+   
+   <button type="submit" class="intwS-submit" id="submit">Submit code</button>
+
+</fieldset>
+
+        
+    </form>
+    </body>
+</html>
