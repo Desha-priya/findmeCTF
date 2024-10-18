@@ -1,2 +1,2 @@
 # findmeCTF
-Welcome to the File Upload Vulnerability CTF! 🎯 This Capture The Flag (CTF) challenge is designed to teach participants about the risks associated with insecure file upload functionalities in web applications.
+This repository explores file upload vulnerabilities, which occur when applications fail to properly validate uploads. It includes demos of common attacks, mitigation strategies, and best practices for securing file uploads.
